@@ -5,3 +5,7 @@ pivotal tracker branch readme
 patch-1 readme
 
 master readme
+
+## Maintainers
++ Jacob Covington
+
