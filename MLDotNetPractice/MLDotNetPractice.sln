@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLDotNetPractice.Console", "MLDotNetPractice.Console\MLDotNetPractice.Console.csproj", "{3FC78410-9926-4D34-8439-F4FE503F13F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FC78410-9926-4D34-8439-F4FE503F13F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC78410-9926-4D34-8439-F4FE503F13F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC78410-9926-4D34-8439-F4FE503F13F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC78410-9926-4D34-8439-F4FE503F13F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D34BE8C5-89C9-472B-8F74-72B303998020}
+	EndGlobalSection
+EndGlobal
