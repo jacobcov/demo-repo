@@ -8,5 +8,8 @@ pr:
   - 'azure-pipelines'
 
 steps:
+  - task: DotNetCoreInstaller@0
+      inputs:
+         version: '2.2.0'
   - script: 'dotnet restore ./DemoApp/DemoApp.sln'
   - script: 'dotnet build ./DemoApp/DemoApp.sln'
