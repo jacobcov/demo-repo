@@ -10,6 +10,6 @@ pr:
 steps:
   - task: DotNetCoreInstaller@0
     inputs:
-      version: '2.2.0'
+      version: '2.2.100'
   - script: 'dotnet restore ./DemoApp/DemoApp.sln'
   - script: 'dotnet build ./DemoApp/DemoApp.sln'
