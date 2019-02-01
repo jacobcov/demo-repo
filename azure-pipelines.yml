@@ -3,15 +3,39 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
 
+trigger:
+   - master
+
+# for when pull requests happen
+# using regex, this indicates there are 9 digits, a dash, then the wildcard (so, anything)
+#pr:
+#   - '\d{9,}-*'
+
+pr: 
+   - 'azure-pipelines'
+
+# server that is going to run the build
 pool:
+# our build server is going to run on a machine running this image
   vmImage: 'Ubuntu-16.04'
 
+
+# "rules"
+# each step is going to be a script
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+   script: 'dotnet restore ./*/*.sln'
+   
+#   - script: echo Hello, world!
+ #    display name: 'Run a one-line script'
+ 
+ #  - script: |
+  #     echo Add other tasks to build, test, and deploy your project
+   #    echo See https://aka.ms/yaml
+ #  displayname: 'Run a multi-line script'
+
+  # - task: ArchiveFiles@2
+  #  inputs:
+   #     rootFolderOrFile: '$(build.sourcesDirectory)'
+    #    includeRootFolder: false
+  # - task: PublishBuildArtifacts@1
