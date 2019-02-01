@@ -8,5 +8,5 @@ pr:
   - 'azure-pipelines'
 
 steps:
-  - script: 'dotnet restore ./MovieNight/MovieNight.sln'
-  - script: 'dotnet build ./MovieNight/MovieNight.sln'
+  - script: 'dotnet restore ./DemoApp/DemoApp.sln'
+  - script: 'dotnet build ./DemoApp/DemoApp.sln'
