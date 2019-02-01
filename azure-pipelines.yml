@@ -24,7 +24,7 @@ pool:
 # "rules"
 # each step is going to be a script
 steps:
-   script: 'dotnet restore ./*/*.sln'
+   - script: 'dotnet restore ./*/*.sln'
    
 #   - script: echo Hello, world!
  #    display name: 'Run a one-line script'
