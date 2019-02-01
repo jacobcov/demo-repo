@@ -6,6 +6,7 @@
 
 trigger:
    - master
+   - yaml
 
 # for when pull requests happen
 # using regex, this indicates there are 9 digits, a dash, then the wildcard (so, anything)
